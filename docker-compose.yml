@@ -6,3 +6,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - '3000:3000'
+    networks:
+      - sda2web-network
+
+networks:
+  sda2web-network:
+    driver: bridge
